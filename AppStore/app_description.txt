@@ -1,0 +1,16 @@
+WeiWeathers is your personal weather companion, delivering accurate forecasts with a stunning visual experience.
+
+Key Features:
+• Real-time weather updates for your current location
+• Track weather in multiple cities worldwide
+• Beautiful, dynamic backgrounds that match current conditions
+• 24-hour hourly forecasts at a glance
+• Detailed weather metrics including humidity, wind speed, and visibility
+• Smart weather alerts to keep you prepared
+• Support for both English and Chinese languages
+• Choose between Celsius/Fahrenheit and km/h/mph units
+• Clean, intuitive interface optimized for all devices
+
+Whether you're planning your day or preparing for a trip, WeiWeathers provides the weather information you need in a beautifully designed, easy-to-use app.
+
+Stay informed, stay prepared with WeiWeathers!

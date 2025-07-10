@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeathersPro - Your Ultimate Weather Companion</title>
+    <meta name="description" content="WeathersPro delivers accurate weather forecasts, location-based alerts, and personalized clothing recommendations. Available on iOS App Store.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/logo.svg" alt="WeathersPro Logo" class="logo">
+                <span class="brand-name">WeathersPro</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#screenshots" class="nav-link">Screenshots</a>
+                <a href="#download" class="nav-link">Download</a>
+                <a href="#privacy" class="nav-link">Privacy</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Your Ultimate Weather Companion</h1>
+                <p class="hero-subtitle">Get accurate weather forecasts, personalized clothing advice, and location-based alerts with WeathersPro's beautiful and intuitive interface.</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">Download Now</a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Downloads</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4.8★</span>
+                        <span class="stat-label">Rating</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Updates</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <img src="assets/hero-screenshot.png" alt="WeathersPro App Screenshot" class="app-screenshot">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features</h2>
+                <p class="section-subtitle">Everything you need for weather planning in one beautiful app</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v2"></path>
+                            <path d="M12 20v2"></path>
+                            <path d="M4.93 4.93l1.41 1.41"></path>
+                            <path d="M17.66 17.66l1.41 1.41"></path>
+                            <path d="M2 12h2"></path>
+                            <path d="M20 12h2"></path>
+                            <path d="M6.34 17.66l-1.41 1.41"></path>
+                            <path d="M19.07 4.93l-1.41 1.41"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Accurate Forecasts</h3>
+                    <p class="feature-description">Get precise weather data with hourly and 7-day forecasts powered by reliable weather APIs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Location-Based</h3>
+                    <p class="feature-description">Automatic location detection with support for multiple cities and personalized weather alerts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14,2 14,8 20,8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10,9 9,9 8,9"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Recommendations</h3>
+                    <p class="feature-description">Get personalized clothing advice and activity suggestions based on current weather conditions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Customizable</h3>
+                    <p class="feature-description">Personalize your experience with multiple themes, units, and notification settings.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Notifications</h3>
+                    <p class="feature-description">Receive timely weather alerts and daily forecast reminders to stay prepared.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <circle cx="9" cy="9" r="2"></circle>
+                            <path d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Beautiful Design</h3>
+                    <p class="feature-description">Enjoy a stunning interface with dynamic backgrounds that change with weather conditions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">See It In Action</h2>
+                <p class="section-subtitle">Beautiful, intuitive, and powerful weather forecasting</p>
+            </div>
+            <div class="screenshots-grid">
+                <div class="screenshot-card">
+                    <img src="assets/screenshot-1.png" alt="Main Weather Dashboard" class="screenshot-image">
+                    <h3 class="screenshot-title">Weather Dashboard</h3>
+                    <p class="screenshot-description">Beautiful main interface with current weather conditions</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="assets/screenshot-2.png" alt="Detailed Weather Information" class="screenshot-image">
+                    <h3 class="screenshot-title">Detailed Information</h3>
+                    <p class="screenshot-description">Comprehensive weather metrics and forecasts</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="assets/screenshot-3.png" alt="7-Day Weather Forecast" class="screenshot-image">
+                    <h3 class="screenshot-title">7-Day Forecast</h3>
+                    <p class="screenshot-description">Extended weather planning with detailed predictions</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="assets/screenshot-4.png" alt="City Management" class="screenshot-image">
+                    <h3 class="screenshot-title">City Management</h3>
+                    <p class="screenshot-description">Add and manage multiple cities for weather tracking</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="assets/screenshot-5.png" alt="Settings and Preferences" class="screenshot-image">
+                    <h3 class="screenshot-title">Settings & Preferences</h3>
+                    <p class="screenshot-description">Customize units, notifications, and display options</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="assets/screenshot-6.png" alt="Language Selection" class="screenshot-image">
+                    <h3 class="screenshot-title">Language Options</h3>
+                    <p class="screenshot-description">Support for multiple languages and localization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <h2 class="download-title">Download WeathersPro Today</h2>
+                <p class="download-subtitle">Start your journey to better weather planning</p>
+                <div class="download-buttons">
+                    <a href="#" class="download-btn">
+                        <img src="assets/app-store-badge.png" alt="Download on the App Store">
+                    </a>
+                </div>
+                <div class="download-info">
+                    <div class="info-item">
+                        <span class="info-label">Version:</span>
+                        <span class="info-value">2.1.0</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Size:</span>
+                        <span class="info-value">25.4 MB</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Compatibility:</span>
+                        <span class="info-value">iOS 15.0+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section id="privacy" class="privacy">
+        <div class="container">
+            <div class="privacy-content">
+                <h2 class="privacy-title">Your Privacy Matters</h2>
+                <p class="privacy-subtitle">We're committed to protecting your personal information</p>
+                <div class="privacy-grid">
+                    <div class="privacy-card">
+                        <div class="privacy-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3>Secure Data</h3>
+                        <p>All weather data is processed securely with no personal information stored on our servers.</p>
+                    </div>
+                    <div class="privacy-card">
+                        <div class="privacy-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h3>Location Privacy</h3>
+                        <p>Your location is only used to fetch weather data and is never shared with third parties.</p>
+                    </div>
+                    <div class="privacy-card">
+                        <div class="privacy-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h3>No Tracking</h3>
+                        <p>We don't track your usage patterns or collect analytics data without your consent.</p>
+                    </div>
+                </div>
+                <div class="privacy-links">
+                    <a href="privacy-policy.html" class="privacy-link">Privacy Policy</a>
+                    <a href="terms.html" class="privacy-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo.svg" alt="WeathersPro Logo" class="footer-logo">
+                    <span class="footer-brand-name">WeathersPro</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#features" class="footer-link">Features</a>
+                    <a href="#screenshots" class="footer-link">Screenshots</a>
+                    <a href="#download" class="footer-link">Download</a>
+                    <a href="privacy-policy.html" class="footer-link">Privacy</a>
+                    <a href="mailto:support@weatherspro.com" class="footer-link">Support</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WeathersPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+App Information Form Details:
+
+1. Localizable Information:
+   - Name: WeiWeathers
+   - Subtitle: Real-time weather, beautifully designed
+
+2. General Information:
+   - Bundle ID: com.weiproduct.WeiWeathers
+   - SKU: com.weiproduct.WeiWeather
+   - Apple ID: 6748370834
+
+3. Category:
+   - Primary: Weather
+   - Secondary (optional): Utilities
+
+4. Content Rights:
+   - Check "No, it does not contain, show, or access third-party content"
+
+5. Age Rating:
+   - Set Age Rating: Click button and select "4+" (appropriate for all ages)
+
+6. License Agreement:
+   - Select "Apple's Standard License Agreement"
+
+7. App Encryption Documentation:
+   - You need to upload documentation that states your app uses exempt encryption
+   - Since we're only using HTTPS for API calls, this is exempt encryption
+
+8. App Store Regulations & Permits:
+   - For China Mainland ICP Filing Number: Leave blank (not required for weather apps)

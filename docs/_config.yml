@@ -1,0 +1,122 @@
+title: WeathersPro - Your Ultimate Weather Companion
+description: WeathersPro delivers accurate weather forecasts, location-based alerts, and personalized clothing recommendations. Available on iOS App Store.
+baseurl: ""
+url: "https://weatherspro.app"
+
+# SEO Settings
+author: WeathersPro Team
+lang: en_US
+
+# Social Media
+social:
+  type: Organization
+  links:
+    - https://apps.apple.com/app/weatherspro
+
+# Logo
+logo: /assets/logo.png
+
+# Navigation
+navigation:
+  - name: Home
+    url: /
+  - name: Features
+    url: /#features
+  - name: Screenshots
+    url: /#screenshots
+  - name: Download
+    url: /#download
+  - name: Privacy
+    url: /privacy-policy.html
+
+# GitHub Pages
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude files
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - .git
+  - .gitignore
+  - vendor/
+
+# Include files
+include:
+  - _pages
+  - assets
+  - CNAME
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Default settings
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+    values:
+      image: /assets/hero-screenshot.png
+
+# Site verification (add your verification codes)
+google_site_verification: ""
+bing_site_verification: ""
+
+# Analytics (add your tracking IDs)
+google_analytics: ""
+google_tag_manager: ""
+
+# App specific settings
+app:
+  name: WeathersPro
+  tagline: Your Ultimate Weather Companion
+  version: 2.1.0
+  size: 25.4 MB
+  compatibility: iOS 15.0+
+  rating: 4.8
+  downloads: 10K+
+  app_store_id: ""
+  
+# Contact
+contact:
+  email: support@weatherspro.com
+  privacy_email: privacy@weatherspro.com
+  legal_email: legal@weatherspro.com
+
+# Features
+features:
+  - name: Accurate Forecasts
+    icon: sun
+    description: Get precise weather data with hourly and 7-day forecasts powered by reliable weather APIs.
+  - name: Location-Based
+    icon: map-pin
+    description: Automatic location detection with support for multiple cities and personalized weather alerts.
+  - name: Smart Recommendations
+    icon: clipboard-list
+    description: Get personalized clothing advice and activity suggestions based on current weather conditions.
+  - name: Customizable
+    icon: settings
+    description: Personalize your experience with multiple themes, units, and notification settings.
+  - name: Smart Notifications
+    icon: bell
+    description: Receive timely weather alerts and daily forecast reminders to stay prepared.
+  - name: Beautiful Design
+    icon: image
+    description: Enjoy a stunning interface with dynamic backgrounds that change with weather conditions.

@@ -1,0 +1,31 @@
+ENCRYPTION DOCUMENTATION FOR WEIWEATHERS
+
+App Name: WeiWeathers
+Bundle ID: com.weiproduct.WeiWeathers
+Version: 1.0
+
+ENCRYPTION USAGE DECLARATION:
+
+WeiWeathers uses encryption solely for the following exempt purposes:
+
+1. HTTPS Connections:
+   - All network communications use standard HTTPS/TLS encryption
+   - API calls to weather services use HTTPS protocol
+   - This falls under encryption exemption category (i) - encryption limited to using standard encryption algorithms within Apple's operating system
+
+2. No Custom Encryption:
+   - The app does not implement any custom encryption algorithms
+   - The app does not contain any proprietary encryption methods
+   - All encryption is provided by iOS system frameworks
+
+3. Exemption Category:
+   According to the U.S. Export Administration Regulations (EAR), this app qualifies for exemption under:
+   - Category 5, Part 2, Note 4 of the EAR
+   - Uses only standard encryption for HTTPS communications
+   - Does not contain any non-exempt encryption functionality
+
+CERTIFICATION:
+We certify that WeiWeathers only uses encryption that is exempt from export compliance requirements as it is limited to standard encryption within Apple's iOS operating system for secure network communications.
+
+Date: [Current Date]
+Developer: [Your Name/Company]

@@ -1,0 +1,10 @@
+/* Widget Localizations */
+"widget_display_name" = "Weather";
+"widget_description" = "View current weather conditions";
+"no_data" = "No Data";
+"open_app_hint" = "Open app to update weather";
+"last_updated" = "Updated at";
+"feels_like" = "Feels Like";
+"humidity" = "Humidity";
+"min_temp" = "Low";
+"max_temp" = "High";

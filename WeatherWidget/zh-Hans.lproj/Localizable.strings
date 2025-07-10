@@ -1,0 +1,10 @@
+/* Widget Localizations */
+"widget_display_name" = "天气";
+"widget_description" = "查看当前天气状况";
+"no_data" = "暂无数据";
+"open_app_hint" = "打开应用以更新天气";
+"last_updated" = "更新于";
+"feels_like" = "体感温度";
+"humidity" = "湿度";
+"min_temp" = "最低";
+"max_temp" = "最高";

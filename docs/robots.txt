@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://weatherspro.app/sitemap.xml
+
+# Block crawling of admin/config files
+Disallow: /_config.yml
+Disallow: /README.md
+Disallow: /package.json
+Disallow: /node_modules/
+
+# Allow all assets
+Allow: /assets/
+Allow: /styles.css
+Allow: /script.js
+
+# SEO optimization
+Crawl-delay: 1

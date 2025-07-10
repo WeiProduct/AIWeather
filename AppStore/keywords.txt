@@ -1,0 +1,1 @@
+weather,forecast,temperature,rain,wind,humidity,radar,climate,conditions,alerts,hourly,daily,location,天气,预报,温度,降雨,实时天气

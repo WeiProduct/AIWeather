@@ -1,0 +1,16 @@
+{
+  "name": "weather-api-proxy",
+  "version": "1.0.0",
+  "description": "Secure proxy for OpenWeatherMap API",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "vercel",
+    "dev": "vercel dev"
+  },
+  "keywords": ["weather", "api", "proxy"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  }
+}

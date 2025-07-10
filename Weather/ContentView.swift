@@ -9,53 +9,49 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
+    @StateObject private var viewModel = WeatherViewModel()
+    @StateObject private var languageManager = LanguageManager.shared
+    @State private var showLanguageSelection = false
+    
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
+        Group {
+            if showLanguageSelection {
+                LanguageSelectionView(showLanguageSelection: $showLanguageSelection) {
+                    // 语言选择完成后请求位置权限
+                    checkAndRequestLocationPermission()
                 }
-                .onDelete(perform: deleteItems)
+                .transition(.opacity)
+            } else if viewModel.showingWelcome {
+                WelcomeView(viewModel: viewModel)
+            } else {
+                MainWeatherView(viewModel: viewModel)
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
+        }
+        .animation(.easeInOut, value: viewModel.showingWelcome)
+        .animation(.easeInOut, value: showLanguageSelection)
+        .localizedView()
+        .onAppear {
+            // Check if language has been selected before
+            if !languageManager.hasSelectedLanguage {
+                showLanguageSelection = true
+            } else {
+                // 如果已经选择了语言，检查并请求位置权限
+                checkAndRequestLocationPermission()
             }
-        } detail: {
-            Text("Select an item")
         }
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
+    
+    private func checkAndRequestLocationPermission() {
+        // 如果位置权限状态是未确定，主动请求权限
+        if viewModel.locationManager.authorizationStatus == .notDetermined {
+            viewModel.requestLocationPermission()
+            // 启用自动定位
+            viewModel.autoLocationEnabled = true
         }
     }
 }
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+        .modelContainer(for: [WeatherData.self, City.self], inMemory: true)
 }

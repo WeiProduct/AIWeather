@@ -1,0 +1,13 @@
+// WeatherWidget Configuration Settings
+PRODUCT_BUNDLE_IDENTIFIER = com.weiweathers.weather.widget
+PRODUCT_NAME = WeatherWidget
+INFOPLIST_FILE = WeatherWidget/Info.plist
+
+// Deployment
+IPHONEOS_DEPLOYMENT_TARGET = 14.0
+
+// Swift
+SWIFT_VERSION = 5.0
+
+// Code Signing
+CODE_SIGN_ENTITLEMENTS = WeatherWidget/WeatherWidget.entitlements

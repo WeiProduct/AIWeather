@@ -24,16 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2070A9442950497088DE376F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		471F17E27CCA495DBD9B3D30 /* WeatherWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWidget.swift; sourceTree = "<group>"; };
-		5C05253446894A02A5F19E25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6130EDB22D654BFDAD56F220 /* WeatherWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeatherWidget.entitlements; sourceTree = "<group>"; };
 		75002DAF2E0741CD00E5E081 /* WeathersPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeathersPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75002DBE2E0741CE00E5E081 /* WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = WeatherTests.xctest; path = WeathersPro.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75002DC82E0741CE00E5E081 /* WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = WeatherUITests.xctest; path = WeathersPro.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7543953B2E1F4D230022DBF3 /* WeathersPro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeathersPro.entitlements; sourceTree = "<group>"; };
-		80C523974E604967AE539F57 /* WeatherWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WeatherWidget.intentdefinition; sourceTree = "<group>"; };
-		DB008ED7A60746419DFDEBF2 /* WeatherWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WeatherWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -68,13 +61,6 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4BE5BD9179E34CE89785C9CA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		75002DAC2E0741CD00E5E081 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,27 +85,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02B5A9EDE3954D5F9418AB47 /* WeatherWidget */ = {
-			isa = PBXGroup;
-			children = (
-				471F17E27CCA495DBD9B3D30 /* WeatherWidget.swift */,
-				80C523974E604967AE539F57 /* WeatherWidget.intentdefinition */,
-				5C05253446894A02A5F19E25 /* Assets.xcassets */,
-				2070A9442950497088DE376F /* Info.plist */,
-				6130EDB22D654BFDAD56F220 /* WeatherWidget.entitlements */,
-			);
-			path = WeatherWidget;
-			sourceTree = "<group>";
-		};
 		75002DA62E0741CD00E5E081 = {
 			isa = PBXGroup;
 			children = (
-				7543953B2E1F4D230022DBF3 /* WeathersPro.entitlements */,
 				75002DB12E0741CD00E5E081 /* Weather */,
 				75002DC12E0741CE00E5E081 /* WeatherTests */,
 				75002DCB2E0741CE00E5E081 /* WeatherUITests */,
 				75002DB02E0741CD00E5E081 /* Products */,
-				02B5A9EDE3954D5F9418AB47 /* WeatherWidget */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,7 +101,6 @@
 				75002DAF2E0741CD00E5E081 /* WeathersPro.app */,
 				75002DBE2E0741CE00E5E081 /* WeatherTests.xctest */,
 				75002DC82E0741CE00E5E081 /* WeatherUITests.xctest */,
-				DB008ED7A60746419DFDEBF2 /* WeatherWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,23 +108,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		441BD7651C954017BFEF881C /* WeatherWidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D99978886D784FA984550DF3 /* Build configuration list for PBXNativeTarget "WeatherWidgetExtension" */;
-			buildPhases = (
-				94217151168B489DA40A37E6 /* Sources */,
-				4BE5BD9179E34CE89785C9CA /* Frameworks */,
-				3A23DD6235524ABD975FEFF3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = WeatherWidgetExtension;
-			productName = WeatherWidgetExtension;
-			productReference = DB008ED7A60746419DFDEBF2 /* WeatherWidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		75002DAE2E0741CD00E5E081 /* WeathersPro */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75002DD22E0741CE00E5E081 /* Build configuration list for PBXNativeTarget "WeathersPro" */;
@@ -262,19 +216,11 @@
 				75002DAE2E0741CD00E5E081 /* WeathersPro */,
 				75002DBD2E0741CE00E5E081 /* WeatherTests */,
 				75002DC72E0741CE00E5E081 /* WeatherUITests */,
-				441BD7651C954017BFEF881C /* WeatherWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3A23DD6235524ABD975FEFF3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		75002DAD2E0741CD00E5E081 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -314,13 +260,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		75002DC42E0741CE00E5E081 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		94217151168B489DA40A37E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -452,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -467,27 +406,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WeathersPro.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3SD28WJ262;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Weather/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = WeathersPro;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "天气应用需要访问您的位置信息，以便为您提供当前位置的天气预报服务";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.01;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.weiproduct.WeathersPro;
 				PRODUCT_NAME = WeathersPro;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -501,27 +436,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WeathersPro.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3SD28WJ262;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Weather/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = WeathersPro;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "天气应用需要访问您的位置信息，以便为您提供当前位置的天气预报服务";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.01;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.weiproduct.WeathersPro;
 				PRODUCT_NAME = WeathersPro;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -537,7 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = wei.jizhang2.WeatherTests;
 				PRODUCT_NAME = WeathersPro;
@@ -555,7 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = wei.jizhang2.WeatherTests;
 				PRODUCT_NAME = WeathersPro;
@@ -598,64 +529,6 @@
 			};
 			name = Release;
 		};
-		D76A70DDAF1449069B7DB310 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WeatherWidget/WeatherWidget.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3SD28WJ262;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WeatherWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = WeatherWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.weiproduct.WeathersPro.widget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		E5B2656298AE4670AB0E0E6C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WeatherWidget/WeatherWidget.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3SD28WJ262;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WeatherWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = WeatherWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.weiproduct.WeathersPro.widget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -691,15 +564,6 @@
 			buildConfigurations = (
 				75002DD92E0741CE00E5E081 /* Debug */,
 				75002DDA2E0741CE00E5E081 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D99978886D784FA984550DF3 /* Build configuration list for PBXNativeTarget "WeatherWidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E5B2656298AE4670AB0E0E6C /* Debug */,
-				D76A70DDAF1449069B7DB310 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
